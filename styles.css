@@ -1,0 +1,774 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+
+:root {
+    --darkteal: #003135;
+    --teal: #0FA4AF;
+    --lightteal: #AFDDE5;
+
+}
+
+
+.container {
+    
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+        "header header"
+        "abt_me abt_me"
+        "s_content s_content"
+        "education education"
+        "certifications certifications"
+        "friends friends"
+        "carousel carousel"
+        "footer footer"
+    ;
+}
+
+
+.header {
+    padding-bottom: 90px;
+    background-color: #0FA4AF;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows:  1fr;
+    grid-template-areas: 
+        "article img_me"
+    ;
+}
+
+
+
+
+article {
+    grid-area: article;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+#ichi {
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#ni {
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(220, 83, 20);
+}
+
+#san {
+    padding-bottom: 10px;
+}
+
+#yon {
+    padding-top: 5px;
+}
+
+#yel {
+    color: yellow;
+}
+
+#gre {
+    color: green;
+}
+
+.img_me {
+    grid-area: img_me;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 300px;
+    height: 400px;
+    width: 400px;
+}
+
+.abt_me {
+    grid-area: abt_me;
+    background-color: #0FA4AF;
+    padding-bottom: 30px;
+}
+
+.abt_me h3 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.abt_me p {
+    text-align: center;
+    font-size: 23px;
+    padding: 0px 100px 50px 100px;
+}
+
+.s_content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: 	#AFDDE5;
+    color: #003135;
+    grid-area: s_content;
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1.3fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas:
+    "s_h3 s_h3 s_h3" 
+    "s_cont1 s_cont2 s_cont3"
+    " s_cont4 s_cont4 s_cont4"
+    ;
+}
+
+.s_content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003135;
+}
+
+#s_h3 {
+    grid-area: s_h3;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #003135;
+
+}
+
+.s_cont1 {
+    grid-area: s_cont1;
+    text-align: center;
+    justify-content: center;
+    color: #003135;
+}
+
+.s_cont1 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont2 {
+    grid-area: s_cont2;
+    text-align: center;
+    justify-content: center;
+    color: #003135;
+}
+
+.s_cont2 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont3 {
+    grid-area: s_cont3;
+    text-align: center;
+    justify-content: center;
+    color: #003135;
+}
+
+.s_cont3 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont4 {
+    grid-area: s_cont4;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    color: #003135;
+}
+
+.s_cont4 img {
+    height: 100px;
+    width: 100px;
+
+}
+
+.education {
+    grid-area: education;
+    background-color: 	#003135;
+    padding-bottom: 50px;
+}
+
+.education h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.education h4 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.li1 {
+    text-align: center;
+}
+
+.li1 p {
+    font-size: 20px;
+}
+
+.li2 {
+    text-align: center;
+}
+
+.li2 p {
+    font-size: 20px;
+}
+
+.li2 span {
+    font-size: 20px;
+}
+
+.certifications {
+    grid-area: certifications;
+    text-align: center;
+    background-color: 	#AFDDE5;
+    padding-bottom: 50px;
+}
+
+.certifications h3 {
+    font-size: 30px;
+    padding-top: 30px;
+    color: #003135;
+}
+
+.certifications h4 {
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: #003135;
+}
+
+.certifications p{
+    font-size: 20px;
+    color: #003135;
+}
+
+.groups {
+    grid-area: groups;
+}
+
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(14, 13, 13);
+}
+
+
+.friends {
+    grid-area: friends;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    margin: 0;
+    background-color: rgb(14, 13, 13);
+    font-size: 30px
+
+}
+
+
+.carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px 20px 0px;
+    object-fit:contain;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 5rem;
+}
+
+.carousel-button.next {
+    right: 5rem;
+}
+
+
+footer {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: 	#003135;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "fo0 fo0 fo0"
+    "fo1 fo2 fo3"
+    ;
+}
+
+.fo0{
+    grid-area: fo0;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.fo1 {
+    grid-area: fo1;
+    justify-self: center;
+    display: grid;
+}
+
+.fo1 img {
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    padding-bottom: 10px;
+}
+
+.fo1 p {
+    font-size: 20px;
+    justify-self: center;
+}
+
+.fo2 {
+    grid-area: fo2;
+    justify-self: center;
+    display: grid;
+}
+
+.fo2 img {
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    padding-bottom: 10px;
+}
+
+.fo2 p {
+    font-size: 20px;
+    justify-self: center;
+}
+
+.fo3 {
+    grid-area: fo3;
+    justify-self: center;
+    display: grid;
+}
+
+.fo3 img {
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    padding-bottom: 10px;
+}
+
+.fo3 p {
+    font-size: 20px;
+    justify-self: center;
+}
+
+
+
+
+@media only screen and (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 550px;
+        grid-template-rows: 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.4fr 1.5fr 1.2fr;
+        grid-template-areas: 
+        "header"
+        "abt_me"
+        "s_content"
+        "education"
+        "certifications"
+        "friends"
+        "carousel"
+        "footer"
+        ;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1.5fr;
+        grid-template-areas: 
+            "article"
+            "img_me"
+        ;
+    }
+
+    article {
+        margin: 0px;
+        padding-top: 30px;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        word-wrap: break-word;
+    }
+
+    #ichi {
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+
+    #ni {
+        padding-bottom: 10px;
+        font-size: 50px;
+        color: rgb(220, 83, 20);
+    }
+
+    .img_me {
+        grid-area: img_me;
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+    }
+
+    .abt_me {
+        padding-bottom: 10px;
+    }
+    
+    .abt_me h3 {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .abt_me p {
+        text-align:left;
+        font-size: 20px;
+        padding: 0px 30px 50px 30px;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    .s_content {
+        grid-template-columns: 1.2fr 1.2fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas:
+        "s_h3 s_h3" 
+        "s_cont1 s_cont2"
+        "s_cont3 s_cont4"
+        ;
+    }
+
+    
+.s_content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003135;
+}
+
+
+.s_cont1 {
+    grid-area: s_cont1;
+    text-align: center;
+    justify-content: center;
+    color: #003135;
+}
+
+.s_cont1 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont2 {
+    grid-area: s_cont2;
+    text-align: center;
+    justify-content: center;
+    color: #003135;
+}
+
+.s_cont2 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont3 {
+    grid-area: s_cont3;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #003135;
+}
+
+.s_cont3 img {
+    height: 100px;
+    width: 100px;
+}
+
+.s_cont4 {
+    grid-area: s_cont4;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    color: #003135;
+}
+
+.s_cont4 img {
+    height: 100px;
+    width: 100px;
+
+}
+
+.education {
+    grid-area: education;
+    background-color: 	#003135;
+    padding-bottom: 50px;
+}
+
+.education h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.education h4 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.li1 {
+    text-align: center;
+}
+
+.li1 p {
+    font-size: 20px;
+}
+
+.li2 {
+    text-align: center;
+}
+
+.li2 p {
+    font-size: 20px;
+}
+
+.li2 span {
+    font-size: 20px;
+}
+
+.certifications {
+    grid-area: certifications;
+    text-align: center;
+    background-color: 	#AFDDE5;
+    padding-bottom: 50px;
+}
+
+.certifications h3 {
+    font-size: 30px;
+    padding-top: 30px;
+    color: #003135;
+}
+
+.certifications h4 {
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: #003135;
+}
+
+.certifications p{
+    font-size: 20px;
+    color: #003135;
+}
+
+.groups {
+    grid-area: groups;
+}
+
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(14, 13, 13);
+}
+
+.carousel-button {
+    font-size: 2rem;
+
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+
+.friends {
+    grid-area: friends;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+    background-color: rgb(14, 13, 13);
+    font-size: 30px
+
+}
+
+
+footer {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background-color: 	#003135;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "fo0"
+    "fo1" 
+    "fo2" 
+    "fo3"
+    ;
+}
+
+.fo0{
+    grid-area: fo0;
+    text-align: left;
+    justify-content: left;
+    font-size: 30px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.fo1 {
+    grid-area: fo1;
+    justify-self: left;
+    display: grid;
+    padding-left: 25px;
+}
+
+.fo1 img {
+    height: 50px;
+    width: 50px;
+    justify-self: left;
+    padding-bottom: 10px;
+}
+
+.fo1 p {
+    font-size: 20px;
+    justify-self: left;
+    padding-bottom: 20px;
+}
+
+.fo2 {
+    grid-area: fo2;
+    justify-self: left;
+    display: grid;
+    padding-left: 25px;
+}
+
+.fo2 img {
+    height: 50px;
+    width: 50px;
+    justify-self: left;
+    padding-bottom: 10px;
+}
+
+.fo2 p {
+    font-size: 20px;
+    justify-self: left;
+    padding-bottom: 20px;
+}
+
+.fo3 {
+    grid-area: fo3;
+    justify-self: left;
+    display: grid;
+    padding-left: 25px;
+
+}
+
+.fo3 img {
+    height: 50px;
+    width: 50px;
+    justify-self: left;
+    padding-bottom: 10px;
+}
+
+.fo3 p {
+    font-size: 20px;
+    justify-self: left;
+    padding-bottom: 20px;
+}
+
+}
+
+
+
+@media only screen and (max-width:538px) {
+    .carousel {
+        width: 100%;
+    }
+}    
